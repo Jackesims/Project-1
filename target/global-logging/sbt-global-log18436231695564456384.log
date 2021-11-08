@@ -1,0 +1,9 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(299adbf4-e074-482d-a693-cf5d9358f84d), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"9","parents":[]},"eventTime":1636001704892,"message":"Compiling root","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/jacke/Documents/Scala%20Project%201/project-one/#root/Compile"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/jacke/Documents/Scala%20Project%201/project-one/src/main/scala/example/P1.scala"},"buildTarget":{"uri":"file:/C:/Users/jacke/Documents/Scala%20Project%201/project-one/#root/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/jacke/Documents/Scala%20Project%201/project-one/src/main/scala/example/Hello.scala"},"buildTarget":{"uri":"file:/C:/Users/jacke/Documents/Scala%20Project%201/project-one/#root/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"9","parents":[]},"eventTime":1636001704901,"message":"Compiled root","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/jacke/Documents/Scala%20Project%201/project-one/#root/Compile"},"errors":0,"warnings":0,"time":9}})[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Nov 4, 2021, 12:55:04 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

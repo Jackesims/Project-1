@@ -1,0 +1,39 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@59f56892, check cycles: false, forcegc: true[0m
+[0m[[0m[31merror[0m] [0m[0mModules were resolved with conflicting cross-version suffixes in ProjectRef(uri("file:/C:/Users/jacke/Documents/Scala%20Project%201/project-one/"), "root"):[0m
+[0m[[0m[31merror[0m] [0m[0m   org.scalatest:scalatest _2.13, _2.12[0m
+[0m[[0m[31merror[0m] [0m[0m   org.scala-lang.modules:scala-xml _2.12, _2.13[0m
+[0m[[0m[31merror[0m] [0m[0m   org.scalactic:scalactic _2.12, _2.13[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"Modules were resolved with conflicting cross-version suffixes in ProjectRef(uri(\"file:/C:/Users/jacke/Documents/Scala%20Project%201/project-one/\"), \"root\"):\n   org.scalatest:scalatest _2.13, _2.12\n   org.scala-lang.modules:scala-xml _2.12, _2.13\n   org.scalactic:scalactic _2.12, _2.13"})[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.RuntimeException: Conflicting cross-version suffixes in: org.scalatest:scalatest, org.scala-lang.modules:scala-xml, org.scalactic:scalactic[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.sys.package$.error(package.scala:30)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.librarymanagement.ConflictWarning$.processCrossVersioned(ConflictWarning.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.librarymanagement.ConflictWarning$.apply(ConflictWarning.scala:19)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Classpaths$.$anonfun$ivyBaseSettings$71(Defaults.scala:3194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:833)[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"java.lang.RuntimeException: Conflicting cross-version suffixes in: org.scalatest:scalatest, org.scala-lang.modules:scala-xml, org.scalactic:scalactic\r\n\tat scala.sys.package$.error(package.scala:30)\r\n\tat sbt.librarymanagement.ConflictWarning$.processCrossVersioned(ConflictWarning.scala:39)\r\n\tat sbt.librarymanagement.ConflictWarning$.apply(ConflictWarning.scala:19)\r\n\tat sbt.Classpaths$.$anonfun$ivyBaseSettings$71(Defaults.scala:3194)\r\n\tat scala.Function1.$anonfun$compose$1(Function1.scala:49)\r\n\tat sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)\r\n\tat sbt.std.Transform$$anon$4.work(Transform.scala:68)\r\n\tat sbt.Execute.$anonfun$submit$2(Execute.scala:282)\r\n\tat sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)\r\n\tat sbt.Execute.work(Execute.scala:291)\r\n\tat sbt.Execute.$anonfun$submit$1(Execute.scala:282)\r\n\tat sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)\r\n\tat sbt.CompletionService$$anon$2.call(CompletionService.scala:64)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\r\n\tat java.base/java.lang.Thread.run(Thread.java:833)"})[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched json error for requestId None: {"code":-32603,"message":"(\u001b[31mupdate\u001b[0m) Conflicting cross-version suffixes in: org.scalatest:scalatest, org.scala-lang.modules:scala-xml, org.scalactic:scalactic"}[0m
+[0m[[0m[31merror[0m] [0m[0m([31mupdate[0m) Conflicting cross-version suffixes in: org.scalatest:scalatest, org.scala-lang.modules:scala-xml, org.scalactic:scalactic[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"(\u001b[31mupdate\u001b[0m) Conflicting cross-version suffixes in: org.scalatest:scalatest, org.scala-lang.modules:scala-xml, org.scalactic:scalactic"})[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed Nov 8, 2021, 4:44:02 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
